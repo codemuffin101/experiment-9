@@ -1,0 +1,135 @@
+/* Reset & Body */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1600&q=80') 
+    no-repeat center center/cover;
+  height: 100%;
+  color: #333;
+  transition: background 0.5s ease;
+}
+
+/* Header */
+header {
+  background-color: rgba(60, 80, 20, 0.95); /* darker olive green */
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+}
+
+/* Form box */
+.form-container {
+  background: rgba(255, 255, 255, 0.97);
+  padding: 40px;
+  border-radius: 18px;
+  width: 600px; /* wider container */
+  max-width: 95%;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.35);
+}
+
+/* Headings */
+.form-container h1 {
+  text-align: center;
+  color: rgb(60, 80, 20); /* darker olive green */
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.form-container p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Labels & Inputs */
+form label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 14px;
+}
+
+form input:focus, form select:focus {
+  border-color: rgb(60, 80, 20);
+  box-shadow: 0 0 6px rgb(60, 80, 20);
+  outline: none;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+form button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Dark olive green register button */
+form button[type="submit"] {
+  background-color: rgb(60, 80, 20);
+}
+
+/* Red clear button */
+form button.clear-btn {
+  background-color: #d73c3c;
+}
+
+form button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media(max-width: 450px) {
+  .form-container {
+    width: 90%;
+    padding: 25px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+

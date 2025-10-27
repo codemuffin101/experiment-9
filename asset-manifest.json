@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/codemuffin101/experiment-9.git/static/css/main.f855e6bc.css",
+    "main.js": "/codemuffin101/experiment-9.git/static/js/main.cf8d3396.js",
+    "index.html": "/codemuffin101/experiment-9.git/index.html",
+    "main.f855e6bc.css.map": "/codemuffin101/experiment-9.git/static/css/main.f855e6bc.css.map",
+    "main.cf8d3396.js.map": "/codemuffin101/experiment-9.git/static/js/main.cf8d3396.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.cf8d3396.js"
+  ]
+}
